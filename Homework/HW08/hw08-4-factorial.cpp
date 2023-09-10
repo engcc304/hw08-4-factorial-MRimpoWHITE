@@ -16,3 +16,39 @@
         8! = 120
 
 */
+
+
+#include<stdio.h>
+
+int main(){
+
+    int ip , sum = 1; 
+
+    printf( "input :  " ) ;
+    scanf( "%d" , &ip ) ;
+
+    int i = ip ;
+
+    printf( "%d! = " , ip ) ; 
+
+    while (i > 0)
+    {
+        printf( "%d" , i ) ; 
+
+        sum *= i ;
+
+        i-- ; 
+
+        while ( i > 0 )
+        {
+            printf( " x " ) ; 
+            break ;
+        }
+        
+    }
+
+
+    printf( "\n%d! = %d" , ip , sum );
+
+    return 0 ;
+}
